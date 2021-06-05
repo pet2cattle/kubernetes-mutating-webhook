@@ -1,0 +1,8 @@
+*.log
+*.pot
+*.py[cod]
+__pycache__/
+cache/
+!cache/.gitkeep
+*.json
+k8s/

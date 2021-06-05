@@ -1,0 +1,17 @@
+FROM python:3.8-alpine
+
+WORKDIR /code
+
+# GUNICORN - not an actual dependency
+RUN pip install gunicorn
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY app /code/app
+
+EXPOSE 8443
+
+USER 1001:1001
+
+CMD [ "/usr/local/bin/gunicorn", "app:app", "--certfile=/ssl/server.crt", "--keyfile=/ssl/server.key", "--bind", "0.0.0.0:8443", "--keep-alive", "1" ]

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    test: test-mutator-webhook
+  name: test-mutator-webhook
+spec:
+  containers:
+    - name: demo
+      image: nginx
