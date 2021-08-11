@@ -1,0 +1,120 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ssl-pet2cattle-webhook
+data:
+  server.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDzTCCArWgAwIBAgIUaQt6HUWmFD+MdQl8nWOyx+hlrMEwDQYJKoZIhvcNAQEL
+    BQAwYDELMAkGA1UEBhMCUkMxEjAQBgNVBAgMCUJhcmNlbG9uYTETMBEGA1UECgwK
+    cGV0MmNhdHRsZTEoMCYGA1UEAwwfcGV0MmNhdHRsZS1ob29rLndlYmhvb2tkZW1v
+    LnN2YzAeFw0yMTA4MTEyMDA2MzJaFw0yMjA4MTEyMDA2MzJaMGAxCzAJBgNVBAYT
+    AlJDMRIwEAYDVQQIDAlCYXJjZWxvbmExEzARBgNVBAoMCnBldDJjYXR0bGUxKDAm
+    BgNVBAMMH3BldDJjYXR0bGUtaG9vay53ZWJob29rZGVtby5zdmMwggEiMA0GCSqG
+    SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC1mYz3tQdYciUzdm0kY22lGfhRLFs4y0Et
+    vgm0Icktt2k+pWhuG532lKFIjtmL0/G+lmPZUlRm7S7DUITy2yP2RK1zO5gUce2r
+    IOr4Ag5zWpYlYAUpKzPxQ3Igoi9l9tXa77Lsf0FXMLO47vfUEBDea+ekJZqjvxti
+    fyE1Xc7BLDENpRIv3GweXvVgBEtio1rCQ230vFuxGaHgQU3Qt28dyD8N1P2RbXQ4
+    M5D74ahBIfbCeyBvOmyv5Bm0BT6YJrEVAY62ZeyKCW6SNM5psbfnoBG4bO62sk0z
+    K+7zWWQm8/4S+k1FgKXt8ZuNhtRoBpATAK8mcp5c8F9w/7x1QG/FAgMBAAGjfzB9
+    MB0GA1UdDgQWBBTnfBu9wPj1XZeZGZ7tmQ8X7fsU8DAfBgNVHSMEGDAWgBTnfBu9
+    wPj1XZeZGZ7tmQ8X7fsU8DAPBgNVHRMBAf8EBTADAQH/MCoGA1UdEQQjMCGCH3Bl
+    dDJjYXR0bGUtaG9vay53ZWJob29rZGVtby5zdmMwDQYJKoZIhvcNAQELBQADggEB
+    AEf5FdToi9YURf5bf7NfVAU6l70RbFgfFWv4dzMFCp+jsgMOeL3O57IU80rRxHBI
+    FEkxIfIhiTnR+adDU+eiXm8OjM4bQUIlioMhoDBfuDkFvksWCDqRfR+3iBX7y7Qe
+    UDvGp+NBiBm7+kBuDG4xuP41r+GUuw59LLzNt0+kRQp6HxtzL+mJ1V8beWMrXFrU
+    M4ZwGdmTSb4swP+hC2wGPI5EOOsBkDc2eqXgRR2n63eSTVC8Eo0UWJQw/6RGuzBW
+    q4IyHUh5xoZ7Txea78truVgs413Duhdvp09Vn8GgUgRYXefA0hEM6RRO9sDLIK9f
+    UVIT2Fzb2xETIM3IMOjB6sU=
+    -----END CERTIFICATE-----
+  server.key: |
+    -----BEGIN PRIVATE KEY-----
+    MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1mYz3tQdYciUz
+    dm0kY22lGfhRLFs4y0Etvgm0Icktt2k+pWhuG532lKFIjtmL0/G+lmPZUlRm7S7D
+    UITy2yP2RK1zO5gUce2rIOr4Ag5zWpYlYAUpKzPxQ3Igoi9l9tXa77Lsf0FXMLO4
+    7vfUEBDea+ekJZqjvxtifyE1Xc7BLDENpRIv3GweXvVgBEtio1rCQ230vFuxGaHg
+    QU3Qt28dyD8N1P2RbXQ4M5D74ahBIfbCeyBvOmyv5Bm0BT6YJrEVAY62ZeyKCW6S
+    NM5psbfnoBG4bO62sk0zK+7zWWQm8/4S+k1FgKXt8ZuNhtRoBpATAK8mcp5c8F9w
+    /7x1QG/FAgMBAAECggEAQ8ClImnM8serb3bYo4HhD38P8SEOa7MRf0JulmEgkMjk
+    IDZQLvxow+2R+uMo8Q1DHSs414Tq7nfBQaeR4pW15hSbbemnBMG4vWcLozoJMCp0
+    6D7ZzhFLUNEsDFbWPkGIaiWR6MBVnXUTKIUnu1u/H2y8wLYy6rLLQcVSm3mDQPhd
+    gYNOVPIMHF2Y4axYdlkuAnKjI4LDPJohFeT5qD/hCdP3s6M95CI6g9F+YGLIEwhD
+    9sj8b9//BEe/A94Dl6usIA2MHlp9e8vqapF/R0CfXSuZQXATri75U5JwkHTzYnpE
+    qgTnBb3ozJEA6L9zquMmrH7zG0ppaKAZnV9iIZSQhQKBgQDoaDgOeNZxmmKIfSHN
+    JWEfd9UA3C64d9imdupx9WnVtc2u1ul2t4S60okyB3b9piaS0fLHNL5B15IZRJxY
+    27fpDwvYG7azdWJISRbQD7CIoJo3Isixz4Xsq53W7kpMqdltDyp4iTLYYVEzyShV
+    CLEW4Cut71DbDDwEHYZKCAuq1wKBgQDICPRxzbJ9qE8qoTm6IWQ78Zu2f7xAl9sv
+    srDfl5FOIWlUXLTg848jBGZd41la1kex+KsTL6eTqA51CEKChsLbX+Ouq0iL0kpX
+    iqDb0wxkOdojMWuFZ4x0RSLmv9juuYzddpZvORMdBYD9mB6Vti8K/vJzSFl3UE/S
+    cqdiOuFiwwKBgQCQx9QcF+UnslCtzJ5RCXc+vk0gkwo7+tUppq0YvxTmgLKYt+OL
+    BHqYU+4KD6JuE6K2FjqTJOVdaSjnutlXddFVS/1J7MHdfEP02itvBEcqZjqMHIxA
+    URKSRLs4mQwKRElh6m+/1WCqcb2/cBJDHv4LTS2I1qxdOXrt6WKuHeL+0wKBgHFk
+    2iU1JMykv5P75zyDN03fzZRr3qyDKQZl9mwZgI5Y1Fu1XffzOZ3xHZJ1ka6zr9rM
+    izYKGqXSa7eeIg3aFNXFCs12XV6dq/TqKfvTLMAYJ3cxybDLHUy/8GP8Nx5E4vyb
+    //U21oXqG9AmDphxuUMzeP8u8UB4r3ct9YLyu9d/AoGBAIoAlWlwAsMjm0KTs2kt
+    7yyaLhxX55cCRnW1adedrqLPUXOZEkF7nHCOh4W6iYWnFvnZdGY5YqlPOVHoCsA3
+    xcKGxsOvoEZnDyNmRu8Y7i1Ta7iZ8BWq7hw0nNxNfVYGgw0UQaKDQZNx0V/BUP4y
+    6YmjXNyII6Av3qMqzqpIaNOI
+    -----END PRIVATE KEY-----
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pet2cattle-hook
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: pet2cattle-hook
+  template:
+    metadata:
+      labels:
+        component: pet2cattle-hook
+    spec:
+      containers:
+      - name: pet2cattle
+        image: jordiprats/pet2cattle-mutating-webhook:1
+        ports:
+        - name: http
+          containerPort: 8443
+        volumeMounts:
+        - name: ssl-pet2cattle-webhook
+          mountPath: /ssl
+      volumes:
+      - name: ssl-pet2cattle-webhook
+        configMap:
+          name: ssl-pet2cattle-webhook
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: pet2cattle-hook
+spec:
+  selector:
+    component: pet2cattle-hook
+  ports:
+  - name: http
+    port: 443
+    targetPort: 8443
+---
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+metadata:
+  name: pet2cattle-webhook
+webhooks:
+  - name: pet2cattle-hook.webhookdemo.svc
+    failurePolicy: Fail
+    clientConfig:
+      service:
+        name: pet2cattle-hook
+        namespace: webhookdemo
+        path: "/mutate"
+      caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUR6VENDQXJXZ0F3SUJBZ0lVYVF0NkhVV21GRCtNZFFsOG5XT3l4K2hsck1Fd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1lERUxNQWtHQTFVRUJoTUNVa014RWpBUUJnTlZCQWdNQ1VKaGNtTmxiRzl1WVRFVE1CRUdBMVVFQ2d3SwpjR1YwTW1OaGRIUnNaVEVvTUNZR0ExVUVBd3dmY0dWME1tTmhkSFJzWlMxb2IyOXJMbmRsWW1odmIydGtaVzF2CkxuTjJZekFlRncweU1UQTRNVEV5TURBMk16SmFGdzB5TWpBNE1URXlNREEyTXpKYU1HQXhDekFKQmdOVkJBWVQKQWxKRE1SSXdFQVlEVlFRSURBbENZWEpqWld4dmJtRXhFekFSQmdOVkJBb01DbkJsZERKallYUjBiR1V4S0RBbQpCZ05WQkFNTUgzQmxkREpqWVhSMGJHVXRhRzl2YXk1M1pXSm9iMjlyWkdWdGJ5NXpkbU13Z2dFaU1BMEdDU3FHClNJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUUMxbVl6M3RRZFljaVV6ZG0wa1kyMmxHZmhSTEZzNHkwRXQKdmdtMElja3R0MmsrcFdodUc1MzJsS0ZJanRtTDAvRytsbVBaVWxSbTdTN0RVSVR5MnlQMlJLMXpPNWdVY2UycgpJT3I0QWc1eldwWWxZQVVwS3pQeFEzSWdvaTlsOXRYYTc3THNmMEZYTUxPNDd2ZlVFQkRlYStla0pacWp2eHRpCmZ5RTFYYzdCTERFTnBSSXYzR3dlWHZWZ0JFdGlvMXJDUTIzMHZGdXhHYUhnUVUzUXQyOGR5RDhOMVAyUmJYUTQKTTVENzRhaEJJZmJDZXlCdk9teXY1Qm0wQlQ2WUpyRVZBWTYyWmV5S0NXNlNOTTVwc2Jmbm9CRzRiTzYyc2swegpLKzd6V1dRbTgvNFMrazFGZ0tYdDhadU5odFJvQnBBVEFLOG1jcDVjOEY5dy83eDFRRy9GQWdNQkFBR2pmekI5Ck1CMEdBMVVkRGdRV0JCVG5mQnU5d1BqMVhaZVpHWjd0bVE4WDdmc1U4REFmQmdOVkhTTUVHREFXZ0JUbmZCdTkKd1BqMVhaZVpHWjd0bVE4WDdmc1U4REFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQ29HQTFVZEVRUWpNQ0dDSDNCbApkREpqWVhSMGJHVXRhRzl2YXk1M1pXSm9iMjlyWkdWdGJ5NXpkbU13RFFZSktvWklodmNOQVFFTEJRQURnZ0VCCkFFZjVGZFRvaTlZVVJmNWJmN05mVkFVNmw3MFJiRmdmRld2NGR6TUZDcCtqc2dNT2VMM081N0lVODByUnhIQkkKRkVreElmSWhpVG5SK2FkRFUrZWlYbThPak00YlFVSWxpb01ob0RCZnVEa0Z2a3NXQ0RxUmZSKzNpQlg3eTdRZQpVRHZHcCtOQmlCbTcra0J1REc0eHVQNDFyK0dVdXc1OUxMek50MCtrUlFwNkh4dHpMK21KMVY4YmVXTXJYRnJVCk00WndHZG1UU2I0c3dQK2hDMndHUEk1RU9Pc0JrRGMyZXFYZ1JSMm42M2VTVFZDOEVvMFVXSlF3LzZSR3V6QlcKcTRJeUhVaDV4b1o3VHhlYTc4dHJ1VmdzNDEzRHVoZHZwMDlWbjhHZ1VnUllYZWZBMGhFTTZSUk85c0RMSUs5ZgpVVklUMkZ6YjJ4RVRJTTNJTU9qQjZzVT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+    rules:
+      - operations: [ "CREATE" ]
+        apiGroups: [""]
+        apiVersions: ["v1"]
+        resources: ["pods"]
+    admissionReviewVersions: ["v1", "v1beta1"]
+    sideEffects: None
+    timeoutSeconds: 5
